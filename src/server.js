@@ -10,9 +10,10 @@ const PORT = process.env.PORT || 5003
 // Get the directory name from the file path
   const __dirname = dirname(__filename)  
 
+//Middleware
+app.use(express.json())
 // Serves the HTML file from the /public directory 
 // Tells express to serve all files from the public folder as static asset / file. Any requests for the css files will be resolved to the public directory
-
 app.use(express.static(path.join(__dirname, '../public')))
 
 // Serving up the HTML file from the /public directory
