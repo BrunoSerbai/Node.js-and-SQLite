@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
 })
 
-// Updeate a todo
+// Update a todo
 router.put('/:id', (req, res) => {
 })
  
